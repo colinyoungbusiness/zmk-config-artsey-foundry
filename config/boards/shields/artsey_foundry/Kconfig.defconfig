@@ -1,0 +1,18 @@
+if SHIELD_ARTSEY_FOUNDRY
+
+config ZMK_KEYBOARD_NAME
+    default "Artsey Foundry"
+
+config BT_DEVICE_NAME
+    default "Artsey Foundry"
+
+config ZMK_BLE
+    default y
+
+config ZMK_MOUSE
+    default y
+
+config ZMK_HID_REPORT_TYPE_NKRO
+    default y
+
+endif

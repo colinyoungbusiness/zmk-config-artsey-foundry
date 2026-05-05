@@ -1,0 +1,3 @@
+# No whitespace after the comma or in your shield name!
+config SHIELD_ARTSEY_FOUNDRY
+    def_bool $(shields_list_contains,artsey_foundry)

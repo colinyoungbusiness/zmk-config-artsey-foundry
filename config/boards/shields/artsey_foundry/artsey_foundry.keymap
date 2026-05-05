@@ -1,0 +1,517 @@
+/ {
+    macros {
+        /* Clipboard macros */
+        copy_macro: copy_macro {
+            compatible = "zmk,behavior-macro";
+            label = "copy_macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTL C>;
+        };
+        
+        paste_macro: paste_macro {
+            compatible = "zmk,behavior-macro";
+            label = "paste_macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTL V>;
+        };
+        
+        cut_macro: cut_macro {
+            compatible = "zmk,behavior-macro";
+            label = "cut_macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTL X>;
+        };
+        
+        undo_macro: undo_macro {
+            compatible = "zmk,behavior-macro";
+            label = "undo_macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTL Z>;
+        };
+        
+        alt_tab_macro: alt_tab_macro {
+            compatible = "zmk,behavior-macro";
+            label = "alt_tab_macro";
+            #binding-cells = <0>;
+            bindings = <&kp LALT TAB>;
+        };
+        
+        alt_shift_tab_macro: alt_shift_tab_macro {
+            compatible = "zmk,behavior-macro";
+            label = "alt_shift_tab_macro";
+            #binding-cells = <0>;
+            bindings = <&kp LALT LSHIFT TAB>;
+        };
+        
+        win_shift_s_macro: win_shift_s_macro {
+            compatible = "zmk,behavior-macro";
+            label = "win_shift_s_macro";
+            #binding-cells = <0>;
+            bindings = <&kp LGUI LSHIFT S>;
+        };
+        
+        ctrl_alt_e_macro: ctrl_alt_e_macro {
+            compatible = "zmk,behavior-macro";
+            label = "ctrl_alt_e_macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTL LALT E>;
+        };
+        
+        ctrl_alt_c_macro: ctrl_alt_c_macro {
+            compatible = "zmk,behavior-macro";
+            label = "ctrl_alt_c_macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTL LALT C>;
+        };
+        
+        punc_mpm: punc_mpm {
+            compatible = "zmk,behavior-macro";
+            label = "punc_mpm";
+            #binding-cells = <0>;
+            bindings = <&kp LSHIFT M &kp P &kp M>;
+        };
+        
+        gui_up_macro: gui_up_macro {
+            compatible = "zmk,behavior-macro";
+            label = "gui_up_macro";
+            #binding-cells = <0>;
+            bindings = <&kp LGUI UP>;
+        };
+        
+        gui_down_macro: gui_down_macro {
+            compatible = "zmk,behavior-macro";
+            label = "gui_down_macro";
+            #binding-cells = <0>;
+            bindings = <&kp LGUI DOWN>;
+        };
+        
+        gui_left_macro: gui_left_macro {
+            compatible = "zmk,behavior-macro";
+            label = "gui_left_macro";
+            #binding-cells = <0>;
+            bindings = <&kp LGUI LEFT>;
+        };
+        
+        gui_right_macro: gui_right_macro {
+            compatible = "zmk,behavior-macro";
+            label = "gui_right_macro";
+            #binding-cells = <0>;
+            bindings = <&kp LGUI RIGHT>;
+        };
+        
+        gui_ctrl_left_macro: gui_ctrl_left_macro {
+            compatible = "zmk,behavior-macro";
+            label = "gui_ctrl_left_macro";
+            #binding-cells = <0>;
+            bindings = <&kp LGUI LCTL LEFT>;
+        };
+        
+        gui_ctrl_right_macro: gui_ctrl_right_macro {
+            compatible = "zmk,behavior-macro";
+            label = "gui_ctrl_right_macro";
+            #binding-cells = <0>;
+            bindings = <&kp LGUI LCTL RIGHT>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+        
+        /* ARTSEY letter combos */
+        combo_h {
+            timeout-ms = <50>;
+            key-positions = <4 6>;
+            bindings = <&kp H>;
+            layers = <0>;
+        };
+        
+        combo_q {
+            timeout-ms = <50>;
+            key-positions = <0 2 3>;
+            bindings = <&kp Q>;
+            layers = <0>;
+        };
+        
+        combo_u {
+            timeout-ms = <50>;
+            key-positions = <5 6>;
+            bindings = <&kp U>;
+            layers = <0>;
+        };
+        
+        combo_c {
+            timeout-ms = <50>;
+            key-positions = <4 5>;
+            bindings = <&kp C>;
+            layers = <0>;
+        };
+        
+        combo_k {
+            timeout-ms = <50>;
+            key-positions = <5 7>;
+            bindings = <&kp K>;
+            layers = <0>;
+        };
+        
+        combo_b {
+            timeout-ms = <50>;
+            key-positions = <4 7>;
+            bindings = <&kp B>;
+            layers = <0>;
+        };
+        
+        combo_w {
+            timeout-ms = <50>;
+            key-positions = <0 3>;
+            bindings = <&kp W>;
+            layers = <0>;
+        };
+        
+        combo_n {
+            timeout-ms = <50>;
+            key-positions = <6 7>;
+            bindings = <&kp N>;
+            layers = <0>;
+        };
+        
+        combo_f {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp F>;
+            layers = <0>;
+        };
+        
+        combo_x {
+            timeout-ms = <50>;
+            key-positions = <1 2 3>;
+            bindings = <&kp X>;
+            layers = <0>;
+        };
+        
+        combo_j {
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+            bindings = <&kp J>;
+            layers = <0>;
+        };
+        
+        combo_m {
+            timeout-ms = <50>;
+            key-positions = <5 6 7>;
+            bindings = <&kp M>;
+            layers = <0>;
+        };
+        
+        combo_p {
+            timeout-ms = <50>;
+            key-positions = <4 6 7>;
+            bindings = <&kp P>;
+            layers = <0>;
+        };
+        
+        combo_v {
+            timeout-ms = <50>;
+            key-positions = <1 3>;
+            bindings = <&kp V>;
+            layers = <0>;
+        };
+        
+        combo_l {
+            timeout-ms = <50>;
+            key-positions = <4 5 6>;
+            bindings = <&kp L>;
+            layers = <0>;
+        };
+        
+        combo_z {
+            timeout-ms = <50>;
+            key-positions = <3 2 1 0>;
+            bindings = <&kp Z>;
+            layers = <0>;
+        };
+        
+        combo_d {
+            timeout-ms = <50>;
+            key-positions = <0 1 2>;
+            bindings = <&kp D>;
+            layers = <0>;
+        };
+        
+        combo_g {
+            timeout-ms = <50>;
+            key-positions = <2 1>;
+            bindings = <&kp G>;
+            layers = <0>;
+        };
+        
+        /* Punctuation and control combos */
+        combo_space {
+            timeout-ms = <50>;
+            key-positions = <7 6 5 4>;
+            bindings = <&kp SPACE>;
+            layers = <0>;
+        };
+        
+        combo_backspace {
+            timeout-ms = <50>;
+            key-positions = <4 1>;
+            bindings = <&kp BSPC>;
+            layers = <0>;
+        };
+        
+        combo_del {
+            timeout-ms = <50>;
+            key-positions = <1 6>;
+            bindings = <&kp DEL>;
+            layers = <0>;
+        };
+        
+        combo_enter {
+            timeout-ms = <50>;
+            key-positions = <0 4>;
+            bindings = <&kp ENTER>;
+            layers = <0>;
+        };
+        
+        combo_escape {
+            timeout-ms = <50>;
+            key-positions = <0 1 7>;
+            bindings = <&kp ESC>;
+            layers = <0>;
+        };
+        
+        combo_quote {
+            timeout-ms = <50>;
+            key-positions = <1 5>;
+            bindings = <&kp APOS>;
+            layers = <0>;
+        };
+        
+        combo_bang {
+            timeout-ms = <50>;
+            key-positions = <2 6>;
+            bindings = <&kp EXCL>;
+            layers = <0>;
+        };
+        
+        combo_question {
+            timeout-ms = <50>;
+            key-positions = <3 7>;
+            bindings = <&kp QUESTION>;
+            layers = <0>;
+        };
+        
+        combo_period {
+            timeout-ms = <50>;
+            key-positions = <0 6>;
+            bindings = <&kp PERIOD>;
+            layers = <0>;
+        };
+        
+        combo_comma {
+            timeout-ms = <50>;
+            key-positions = <0 5>;
+            bindings = <&kp COMMA>;
+            layers = <0>;
+        };
+        
+        combo_slash {
+            timeout-ms = <50>;
+            key-positions = <0 7>;
+            bindings = <&kp SLASH>;
+            layers = <0>;
+        };
+        
+        combo_tab {
+            timeout-ms = <50>;
+            key-positions = <0 1 2 7>;
+            bindings = <&kp TAB>;
+            layers = <0>;
+        };
+        
+        combo_shift {
+            timeout-ms = <50>;
+            key-positions = <0 5 6 7>;
+            bindings = <&kp LSHIFT>;
+            layers = <0>;
+        };
+        
+        combo_ctrl {
+            timeout-ms = <50>;
+            key-positions = <3 4>;
+            bindings = <&kp LCTRL>;
+            layers = <0>;
+        };
+        
+        combo_gui {
+            timeout-ms = <50>;
+            key-positions = <3 5>;
+            bindings = <&kp LGUI>;
+            layers = <0>;
+        };
+        
+        combo_alt {
+            timeout-ms = <50>;
+            key-positions = <3 6>;
+            bindings = <&kp LALT>;
+            layers = <0>;
+        };
+        
+        /* Layer-switching combos */
+        combo_nav {
+            timeout-ms = <50>;
+            key-positions = <1 4 6>;
+            bindings = <&mo 5>;
+            layers = <0>;
+        };
+        
+        combo_mou {
+            timeout-ms = <50>;
+            key-positions = <0 2 5>;
+            bindings = <&mo 4>;
+            layers = <0>;
+        };
+        
+        combo_simp {
+            timeout-ms = <50>;
+            key-positions = <3 6 0 4>;
+            bindings = <&mo 9>;
+            layers = <0>;
+        };
+        
+        combo_maple {
+            timeout-ms = <50>;
+            key-positions = <3 2 7>;
+            bindings = <&mo 10>;
+            layers = <0>;
+        };
+        
+        combo_game {
+            timeout-ms = <50>;
+            key-positions = <1 0 7 6>;
+            bindings = <&mo 12>;
+            layers = <0>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+        
+        /* Layer 0: ARTSEY Base */
+        base_layer {
+            label = "Base";
+            bindings = <
+                &lt 6 A     &lt 8 R     &lt 7 T    &lt 1 S
+                &lt 3 E    &kp Y                    &lt 11 I      &lt 2 O
+            >;
+        };
+        
+        /* Layer 1: Numbers */
+        num_layer {
+            label = "Num";
+            bindings = <
+                &kp N1      &kp N2      &kp N3      &trans
+                &kp N4      &kp N5      &kp N6      &trans
+            >;
+        };
+        
+        /* Layer 2: Custom (Media) */
+        cus_layer {
+            label = "Custom";
+            bindings = <
+                &kp C_PLAY  &kp C_MUTE  &kp C_VOL_UP  &trans
+                &kp C_NEXT  &kp C_PREV  &kp C_VOL_DN  &trans
+            >;
+        };
+        
+        /* Layer 3: Punctuation */
+        punc_layer {
+            label = "Punc";
+            bindings = <
+                &kp HASH    &kp GRAVE   &kp SEMI    &kp BSLH
+                &trans      &kp AT      &kp MINUS   &kp EQUAL
+            >;
+        };
+        
+        /* Layer 4: Mouse */
+        mou_layer {
+            label = "Mouse";
+            bindings = <
+                &mkp LCLK   &mmv MOVE_UP    &mkp RCLK   &mwh SCRL_UP
+                &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT &mwh SCRL_DN
+            >;
+        };
+        
+        /* Layer 5: Navigation */
+        nav_layer {
+            label = "Nav";
+            bindings = <
+                &kp HOME    &kp UP      &kp END     &kp PGUP
+                &kp LEFT    &kp DOWN    &kp RIGHT   &kp PGDN
+            >;
+        };
+        
+        /* Layer 6: Symbols */
+        sym_layer {
+            label = "Sym";
+            bindings = <
+                &trans      &kp LPAR    &kp LBKT    &kp LBRC
+                &trans      &kp RPAR    &kp RBKT    &kp RBRC
+            >;
+        };
+        
+        /* Layer 7: Macros */
+        macro_layer {
+            label = "Macro";
+            bindings = <
+                &alt_tab_macro              &alt_shift_tab_macro            &kp F1                  &copy_macro
+                &cut_macro                  &paste_macro                    &undo_macro             &trans
+            >;
+        };
+        
+        /* Layer 8: Hold Keys */
+        hold_layer {
+            label = "Hold";
+            bindings = <
+                &bootloader                 &mt LSHIFT F1       &mt LCTRL F2        &trans
+                &kp F3                      &kp F4              &mt LGUI F5         &mt LALT F6
+            >;
+        };
+        
+        /* Layer 9: Simple */
+        simp_layer {
+            label = "Simp";
+            bindings = <
+                &kp A       &kp B       &kp C       &kp D
+                &kp E       &kp F       &kp G       &kp H
+            >;
+        };
+        
+        /* Layer 10: Maple (Math/Calculator) */
+        maple_layer {
+            label = "Maple";
+            bindings = <
+                &lt 6 N1    &lt 8 N2    &lt 7 N3   &kp N4
+                &lt 3 N5    &kp N6                   &kp N7                   &kp N8
+            >;
+        };
+        
+        /* Layer 11: GUI (Window Management) */
+        gui_layer {
+            label = "GUI";
+            bindings = <
+                &gui_ctrl_left_macro    &gui_ctrl_right_macro   &ctrl_alt_e_macro   &gui_up_macro
+                &gui_left_macro         &gui_right_macro        &trans              &gui_down_macro
+            >;
+        };
+        
+        /* Layer 12: Game */
+        game_layer {
+            label = "Game";
+            bindings = <
+                &kp LSHIFT  &kp Q       &kp W       &kp R
+                &kp LCTRL   &kp A       &kp S       &kp D
+            >;
+        };
+    };
+};
